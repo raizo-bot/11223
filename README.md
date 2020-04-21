@@ -15,3 +15,6 @@ Cette Template dispose:
     — D'un indicateur de statut de bot (À réaliser en BackEnd).
 
     — D'un indicateur de nombre de serveurs rejoint par le bot (À réaliser en BackEnd).
+
+
+# [DEMO](https://mandral.gq/discord-template/)
