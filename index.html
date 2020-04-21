@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <title>Discord — Template Bot</title>
+      <meta name="description" content="Template pour accueillir un bot Discord !"/>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+      <link rel="icon" href="https://discordapp.com/assets/07dca80a102d4149e9736d4b162cff6f.ico" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/cb6d147105.js" crossorigin="anonymous"></script>
+      <meta property="og:title" content="Discord — Template Bot" />
+	  <meta property="og:type" content="website" />
+	  <meta property="og:url" content="https://mandral.gq/discord-template/" />
+	  <meta property="og:image" content="https://mandral.gq/discord-template/img/avatar.png" />
+	  <meta property="og:description" content="Template pour accueillir un bot Discord !" />
+	  <meta name="theme-color" content="#7289da">
+   </head>
+   <body>
+      <div id="particles-js">
+         <header>
+            <div class="logo_and_text">
+               <svg class="logo" viewBox="0 0 33 36" style="flex-grow:0;flex-shrink:0">
+                  <ellipse cx="19.6" cy="17.1" rx="1.9" ry="2"></ellipse>
+                  <ellipse cx="12.8" cy="17.1" rx="1.9" ry="2"></ellipse>
+                  <path d="M28.5,0H3.8A3.778,3.778,0,0,0,0,3.7V28a3.714,3.714,0,0,0,3.8,3.7h21l-1-3.3,2.4,2.1,2.2,2,4,3.4V3.7A3.937,3.937,0,0,0,28.5,0ZM21.4,23.5s-.7-.8-1.2-1.5a5.958,5.958,0,0,0,3.3-2.1A22.059,22.059,0,0,1,21.4,21a13.817,13.817,0,0,1-2.7.8,15.394,15.394,0,0,1-4.8,0,12.544,12.544,0,0,1-2.7-.8c-.4-.2-.9-.4-1.4-.6-.1,0-.1-.1-.2-.1H9.5A5.2,5.2,0,0,0,9,20a5.932,5.932,0,0,0,3.2,2.1c-.6.7-1.2,1.5-1.2,1.5-4.1-.1-5.6-2.7-5.6-2.7A23.4,23.4,0,0,1,8.1,10.4a8.948,8.948,0,0,1,5.2-1.9l.2.2A10.672,10.672,0,0,0,8.7,11s.4-.2,1.1-.5A13.33,13.33,0,0,1,14,9.4h.3a15.243,15.243,0,0,1,3.7,0,16.225,16.225,0,0,1,5.6,1.7A12.081,12.081,0,0,0,19,8.8l.3-.3a8.948,8.948,0,0,1,5.2,1.9,23.4,23.4,0,0,1,2.7,10.5A7.865,7.865,0,0,1,21.4,23.5Z"></path>
+               </svg>
+               <svg class="logo-text" viewBox="0 0 98 36" style="flex-grow:0;flex-shrink:0">
+                  <path d="M12.8,7.8H6.7v6.8l4.1,3.6V11.6H13c1.4,0,2.1.7,2.1,1.7v5c0,1-.6,1.8-2.1,1.8H6.7v3.8h6.1c3.3,0,6.4-1.6,6.4-5.3V13.2C19.2,9.4,16.1,7.8,12.8,7.8ZM45,18.6V13c0-2,3.7-2.5,4.8-.5l3.4-1.3a6.069,6.069,0,0,0-5.8-3.7c-3.3,0-6.5,1.9-6.5,5.5v5.6c0,3.7,3.2,5.5,6.5,5.5a6.611,6.611,0,0,0,5.9-3.6l-3.7-1.6C48.7,21.1,45,20.6,45,18.6ZM33.8,13.8c-1.3-.3-2.1-.7-2.2-1.5.1-1.9,3-1.9,4.7-.1l2.7-2a6.884,6.884,0,0,0-5.6-2.6c-3,0-5.9,1.7-5.9,4.8s2.4,4.7,5.1,5.1c1.3.2,2.8.7,2.8,1.6-.1,1.7-3.7,1.6-5.4-.3l-2.6,2.4A7.258,7.258,0,0,0,33,24.1c3,0,6.3-1.7,6.5-4.8C39.6,15.3,36.7,14.3,33.8,13.8ZM21.4,23.9h4.2V7.8H21.5V23.9ZM91.2,7.8H85.1v6.8l4.1,3.6V11.6h2.2c1.4,0,2.1.7,2.1,1.7v5c0,1-.6,1.8-2.1,1.8H85.1v3.8h6.1c3.3,0,6.4-1.6,6.4-5.3V13.2C97.6,9.4,94.5,7.8,91.2,7.8ZM61.1,7.6c-3.4,0-6.8,1.8-6.8,5.5v5.5c0,3.7,3.4,5.5,6.8,5.5s6.8-1.8,6.8-5.5V13.1C67.9,9.4,64.5,7.6,61.1,7.6Zm2.7,11c0,1.2-1.3,1.8-2.6,1.8s-2.7-.6-2.7-1.8V13.1c0-1.2,1.3-1.8,2.6-1.8s2.7.6,2.7,1.8Zm19-5.5c-.1-3.8-2.7-5.3-6.1-5.3H70.1V23.9h4.2V18.8H75l3.8,5.1H84l-4.5-5.5C81.6,17.8,82.8,16.1,82.8,13.1Zm-6,2.2H74.4V11.6h2.4A1.853,1.853,0,1,1,76.8,15.3Z"></path>
+               </svg>
+            </div>
+            <div class="list_label">
+               <a href="" class="download_label">Télécharger</a>
+               <div class="trad">
+                  <svg class="logo_lang" xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                     <path fill="#D0D0D0" fill-rule="evenodd" d="M11.87 13.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 13.07 4H16V2H9V0H7v2H0v2h11.17C10.5 5.92 9.44 7.75 8 9.35 7.07 8.32 6.3 7.19 5.69 6h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L3 17l5-5 3.11 3.11.76-2.04zM17.5 8h-2L11 20h2l1.12-3h4.75L20 20h2L17.5 8zm-2.62 7l1.62-4.33L18.12 15h-3.24z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="7" height="5">
+                     <g fill="none" fill-rule="evenodd">
+                        <path d="M0 0h7v5H0z"/>
+                        <path d="M0 1l3.488 2.737L6.975 1" stroke="#D0D0D0"/>
+                     </g>
+                  </svg>
+                  <div class="all_lang" id="style-1">
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_1" onClick="reply_click(this.id)">
+                           <img src="https://discordapp.com/assets/d24e290703f8b31b56744a69df613fcb.png" alt="български">
+                           <label>български</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_2">
+                           <img src="https://discordapp.com/assets/44a7840b2161275358742595c9257e76.png" alt="Čeština">
+                           <label>Čeština</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_3">
+                           <img src="https://discordapp.com/assets/3590df6f2ae2f7202dab15c0bd3aca9a.png" alt="Dansk">
+                           <label>Dansk</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_4">
+                           <img src="https://discordapp.com/assets/7fa2adf98f26db34178bb30a63dabe8c.png" alt="Deutsch">
+                           <label>Deutsch</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_5">
+                           <img src="https://discordapp.com/assets/d19290ba3158e138bb241ae669a3bc37.png" alt="Ελληνικά">
+                           <label>Ελληνικά</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_6">
+                           <img src="https://discordapp.com/assets/e6d6b255259ac878d00819a9555072ad.png" alt="English, USA">
+                           <label>English, USA</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_7">
+                           <img src="https://discordapp.com/assets/10bb7b2e55f0a34f23d903121de6b9bc.png" alt="Español">
+                           <label>Español</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_8">
+                           <img src="https://discordapp.com/assets/02e75e392ab5d5a8ed5ab4f8fcae9c77.png" alt="Suomi">
+                           <label>Suomi</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_9">
+                           <img src="https://discordapp.com/assets/8d1d548a64761f0c5b1d7c9e00ae66a6.png" alt="Français">
+                           <label>Français</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_10">
+                           <img src="https://discordapp.com/assets/cfc9643cb00e44fae64bfeda3556bfd9.png" alt="Hrvatski">
+                           <label>Hrvatski</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_11">
+                           <img src="https://discordapp.com/assets/08d0c70a708cd25acecb7a8b0cb0eb23.png" alt="Magyar">
+                           <label>Magyar</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_12">
+                           <img src="https://discordapp.com/assets/cbf50c2e3287d2118f741e827a3ddaf5.png" alt="Italiano">
+                           <label>Italiano</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_13">
+                           <img src="https://discordapp.com/assets/f23c5c28c4429691f7c54af93876d661.png" alt="日本語">
+                           <label>日本語</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_14">
+                           <img src="https://discordapp.com/assets/ab02db863b7edeaa46bf4cd49b6646a9.png" alt="한국어">
+                           <label>한국어</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_15">
+                           <img src="https://discordapp.com/assets/7eb9487d4dac00095f8ed2d2c80b21a8.png" alt="Lietuviškai">
+                           <label>Lietuviškai</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_16">
+                           <img src="https://discordapp.com/assets/c9f51873ae719a6b4b8c6724362e999e.png" alt="Nederlands">
+                           <label>Nederlands</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_17">
+                           <img src="https://discordapp.com/assets/fcdf14841cd468de3f43704be16fa303.png" alt="Norwegian">
+                           <label>Norwegian</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_18">
+                           <img src="https://discordapp.com/assets/894cceea2dd5b523936930d1d7e333c5.png" alt="Polski">
+                           <label>Polski</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_19">
+                           <img src="https://discordapp.com/assets/7beab7b17eaa9ff7ceed3e5b1af274c2.png" alt="Português do Brasil">
+                           <label>Português do Brasil</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_20">
+                           <img src="https://discordapp.com/assets/d5073ab2ca9ee7c06c3f4d761968ac44.png" alt="Română">
+                           <label>Română</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_21">
+                           <img src="https://discordapp.com/assets/64f37efd5319b9b581557604864f042a.png" alt="Русский">
+                           <label>Русский</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_22">
+                           <img src="https://discordapp.com/assets/2ac1239c26c4ae1d27817a9d7b85dc53.png" alt="Svenska">
+                           <label>Svenska</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_23">
+                           <img src="https://discordapp.com/assets/da07da4bde6f81f16366b62e8fcc90ec.png" alt="ไทย">
+                           <label>ไทย</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_24">
+                           <img src="https://discordapp.com/assets/8e1cf1f1cf2a1a917002b8b583270c32.png" alt="Türkçe">
+                           <label>Türkçe</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_25">
+                           <img src="https://discordapp.com/assets/d52ce383ca6d8eb53588bcc042574cae.png" alt="Українська">
+                           <label>Українська</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_26">
+                           <img src="https://discordapp.com/assets/b1309f8892f138383d8b0b6ff8e23463.png" alt="Tiếng Việt">
+                           <label>Tiếng Việt</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_27">
+                           <img src="https://discordapp.com/assets/b2da62f020089ccee92860e4defafdb4.png" alt="中文">
+                           <label>中文</label>
+                        </div>
+                     </div>
+                     <div class="lang_select">
+                        <div class="contain_lang" id="lang_28">
+                           <img src="https://discordapp.com/assets/4db0790f7a81e49025d7fbfb9aeb182c.png" alt="繁體中文">
+                           <label>繁體中文</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+               <path fill="#7289da" fill-opacity="1" d="M0,64L30,80C60,96,120,128,180,122.7C240,117,300,75,360,96C420,117,480,203,540,245.3C600,288,660,288,720,272C780,256,840,224,900,192C960,160,1020,128,1080,122.7C1140,117,1200,139,1260,133.3C1320,128,1380,96,1410,80L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+            </svg>
+         </div>
+         <div class="container">
+            <div class="gradient-border">
+               <div class="avatar"></div>
+               <div class="status online"></div>
+               <!-- <div class="status inactive"></div> Pour afficher quand le bot est inactif-->
+               <!-- <div class="status do_not_disturb"></div> Pour afficher quand le bot est en ne pas déranger-->
+               <!-- <div class="status invisible"></div> Pour afficher quand le bot est déconnecté -->
+            </div>
+            <label class="number_join">119918 serveurs rejoints</label>
+            <a alt="Inviter" href="#bot_link" class="invit">Inviter</a>
+            <a alt="Voter" href="#vote_link" class="vote">Voter</a>
+         </div>
+      </div>
+      <div class="context" hidden>
+         <div class="context_item">
+            <div class="inner_item inv">
+               <i class="fas fa-handshake"></i>
+               <a href="#inviter"><span>Inviter</span></a>
+            </div>
+         </div>
+         <div class="context_hr"></div>
+         <div class="context_item">
+            <div class="inner_item vo">
+               <i class="fas fa-poll"></i>
+               <a href="#voter"><span>Voter</span></a>
+            </div>
+         </div>
+      </div>
+      <!-- scripts -->
+      <script src="js/particles.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/trad.js"></script>
+      <script type="text/javascript">
+         $(document).bind("contextmenu", function(event) {
+          event.preventDefault();
+          $(".context")
+            .show()
+            .css({
+              top: event.pageY + 15, 
+              left: event.pageX + 10
+            });
+         });
+         $(document).click(function() {
+          isHovered = $(".context").is(":hover");
+          if (isHovered == true) {
+            //nothing
+          } else {
+            $(".context").fadeOut("fast");
+          }
+         });
+      </script>
+   </body>
+</html>
